@@ -23,7 +23,7 @@ RUN build_pkgs=" \
   && wget https://dist.torproject.org/tor-0.3.3.7.tar.gz.asc \
   && gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys 0x6AFEE6D49E92B601 \
   && gpg --verify tor-0.3.3.7.tar.gz.asc \
-  && tar xzf https://dist.torproject.org/tor-0.3.3.7.tar.gz \
+  && tar xzf tor-0.3.3.7.tar.gz \
   && cd /tmp/tor-0.3.3.7 \
   && ./configure \
   && make -j6 \
